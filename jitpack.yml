@@ -1,0 +1,7 @@
+jitpack:
+  enable: true
+jdk:
+  version: 17
+build:
+  projects:
+    -mylibrary
