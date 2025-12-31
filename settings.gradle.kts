@@ -23,3 +23,4 @@ dependencyResolutionManagement {
 rootProject.name = "StudyApp2"
 include(":app")
 include(":mylibrary")
+include(":mylibrary2")

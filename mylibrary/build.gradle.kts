@@ -59,7 +59,7 @@ afterEvaluate {
 
                 // 配置 Maven 坐标，这是其他项目引用你的库时的唯一标识
                 groupId = project.extra["groupId"] as? String // 通常是你的 GitHub 用户名或组织名
-                artifactId = project.extra["artifactId"] as? String // 库的名称，通常与模块名一致
+                artifactId = "mylibrary" // 库的名称，通常与模块名一致
                 version = project.extra["appVersion"] as? String // 版本号
             }
         }
