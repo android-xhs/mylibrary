@@ -54,13 +54,13 @@ afterEvaluate {
         publications {
             // 创建一个名为 “release” 的发布配置
             create<MavenPublication>("release") {
-                // 指定要发布的组件（通常是 release 版本的 AAR）
+                // 指定要发布的组件（通常是 release 版本的 AAR包）
                 from(components["release"])
 
                 // 配置 Maven 坐标，这是其他项目引用你的库时的唯一标识
-                groupId = "com.github.andorid-xhs" // 通常是你的 GitHub 用户名或组织名
+                groupId = "com.github.andorid-xhs" // 通常是你的 GitHub 用户名或组织名，可以为包名
                 artifactId = "mylibrary" // 库的名称，通常与模块名一致
-                version = project.extra["appVersion"] as? String // 版本号
+                version = project.extra["appVersion"] as? String // 版本号，jitpack将使用tag标签，这里是设置一个默认值
             }
         }
     }

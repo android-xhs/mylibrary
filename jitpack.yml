@@ -5,3 +5,4 @@ jdk:
 build:
   projects:
     -mylibrary
+    -mylibrary2
